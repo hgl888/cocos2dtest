@@ -110,25 +110,25 @@ void NodeTest2::onEnter()
     
     sp3->setScale(0.25f);
     sp4->setScale(0.25f);
-    
-    sp1->addChild(sp3);
-    sp2->addChild(sp4);
-    
-    auto a1 = RotateBy::create(2, 360);
-    auto a2 = ScaleBy::create(2, 2);
-    
-    auto action1 = RepeatForever::create( Sequence::create(a1, a2, a2->reverse(), nullptr) );
-    auto action2 = RepeatForever::create( Sequence::create(
-																	a1->clone(),
-																	a2->clone(),
-																	a2->reverse(),
-																	nullptr)
-												);
-    
-    sp2->setAnchorPoint(Vec2(0,0));
-    
-    sp1->runAction(action1);
-    sp2->runAction(action2);
+//
+//    sp1->addChild(sp3);
+//    sp2->addChild(sp4);
+//    
+//    auto a1 = RotateBy::create(2, 360);
+//    auto a2 = ScaleBy::create(2, 2);
+//    
+//    auto action1 = RepeatForever::create( Sequence::create(a1, a2, a2->reverse(), nullptr) );
+//    auto action2 = RepeatForever::create( Sequence::create(
+//																	a1->clone(),
+//																	a2->clone(),
+//																	a2->reverse(),
+//																	nullptr)
+//												);
+//    
+//    sp2->setAnchorPoint(Vec2(0,0));
+//    
+//    sp1->runAction(action1);
+//    sp2->runAction(action2);
 }
 
 std::string NodeTest2::subtitle() const

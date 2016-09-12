@@ -301,7 +301,7 @@ GLViewImpl::~GLViewImpl()
 GLViewImpl* GLViewImpl::create(const std::string& viewName)
 {
     auto ret = new (std::nothrow) GLViewImpl;
-    if(ret && ret->initWithRect(viewName, Rect(0, 0, 960, 640), 1.0f, false)) {
+    if(ret && ret->initWithRect(viewName, Rect(0, 0, 480, 320), 1.0f, false)) {
         ret->autorelease();
         return ret;
     }
